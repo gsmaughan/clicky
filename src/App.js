@@ -16,10 +16,11 @@ class App extends Component {
   
   render () {
     return (
-      // console.log("pictures", pictures),
-      //pictures.forEach(picture => console.log("forEach", `${picture}`)),
+      
       <div>
-        <ImageGallery/>
+        <ImageGallery
+         images={this.state.images}
+        />
       </div>
     )
   }

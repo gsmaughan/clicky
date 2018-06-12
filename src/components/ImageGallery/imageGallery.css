@@ -1,0 +1,12 @@
+.thumbnail{
+	height: 280px;
+}
+.img-responsive{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding: 30px;*/
+    /*width: 40%;*/
+    /*height: 190px;*/
+    height: 100%;
+}

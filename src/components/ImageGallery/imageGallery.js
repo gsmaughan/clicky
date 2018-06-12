@@ -2,6 +2,7 @@ import Nav from '../Nav'
 import Jumbotron from '../Jumbotron'
 import React, { Component } from "react"
 import images from "../../images.json";
+import "./imageGallery.css";
 
 const pictures = images.map(function(picture){
   return picture.src;
@@ -98,7 +99,7 @@ class imageGallery extends Component {
   }
 
 
-  handleClick = src => {
+ handleClick = src => {
     console.log(src);
     let imageObjCopy = this.state.imageObj;
     let clickCount = 0;
@@ -138,82 +139,82 @@ class imageGallery extends Component {
     <div className='container' >
       <div className='row'>
         <div className='col-md-4'>
-          <div className='thumbnail' onClick={() => this.handleClick(this.state.images[0])}>
-            <img src={this.state.images[0]} alt="" className="img-responsive" style={{width: '40%'}}></img>
-          </div>
+         <div className='thumbnail' onClick={() => this.handleClick(this.state.images[0])}>
+            <img src={this.state.images[0]} alt="" className="img-responsive"></img>
+          </div> 
         </div>
         <div className='col-md-4'>
           <div className='thumbnail' onClick={() => this.handleClick(this.state.images[1])}>
-            <img src={this.state.images[1]} alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[1]} alt="" className="img-responsive"></img>
           </div>
         </div>
         <div className='col-md-4'>
           <div className='thumbnail' onClick={() => this.handleClick(this.state.images[2])}>
-            <img src={this.state.images[2]} alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[2]} alt="" className="img-responsive"></img>
           </div>
         </div>
       </div>
       <div className='row'>
         <div className='col-md-4'>
           <div className='thumbnail' onClick={() => this.handleClick(this.state.images[3])}>
-            <img src={this.state.images[3]} alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[3]} alt="" className="img-responsive"></img>
           </div>
         </div>
         <div className='col-md-4'>
           <div className='thumbnail' onClick={() => this.handleClick(this.state.images[4])}>
-            <img src={this.state.images[4]} alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[4]} alt="" className="img-responsive"></img>
           </div>
         </div>
         <div className='col-md-4'>
           <div className='thumbnail' onClick={() => this.handleClick(this.state.images[5])}>
-            <img src={this.state.images[5]} alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[5]} alt="" className="img-responsive"></img>
           </div>
         </div>
       </div>
       <div className='row'>
         <div className='col-md-4'>
           <div className='thumbnail' onClick={() => this.handleClick(this.state.images[6])}>
-            <img src={this.state.images[6]}alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[6]}alt="" className="img-responsive"></img>
           </div>
         </div>
         <div className='col-md-4' onClick={() => this.handleClick(this.state.images[7])}>
           <div className='thumbnail'>
-            <img src={this.state.images[7]} alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[7]} alt="" className="img-responsive"></img>
           </div>
         </div>
         <div className='col-md-4' onClick={() => this.handleClick(this.state.images[8])}> 
           <div className='thumbnail'>
-            <img src={this.state.images[8]} alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[8]} alt="" className="img-responsive"></img>
           </div>
         </div>
         <div className='col-md-4' onClick={() => this.handleClick(this.state.images[9])}> 
           <div className='thumbnail'>
-            <img src={this.state.images[9]}  alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[9]}  alt="" className="img-responsive"></img>
           </div>
         </div>
         <div className='col-md-4' onClick={() => this.handleClick(this.state.images[10])}> 
           <div className='thumbnail'>
-            <img src={this.state.images[10]}  alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[10]}  alt="" className="img-responsive"></img>
           </div>
         </div>
         <div className='col-md-4' onClick={() => this.handleClick(this.state.images[11])}> 
           <div className='thumbnail'>
-            <img src={this.state.images[11]}   alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[11]}   alt="" className="img-responsive"></img>
           </div>
         </div>
         <div className='col-md-4' onClick={() => this.handleClick(this.state.images[12])}> 
           <div className='thumbnail'>
-            <img src={this.state.images[12]}  alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[12]}  alt="" className="img-responsive"></img>
           </div>
         </div>
         <div className='col-md-4' onClick={() => this.handleClick(this.state.images[13])}> 
           <div className='thumbnail'>
-            <img src={this.state.images[13]}   alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[13]}   alt="" className="img-responsive"></img>
           </div>
         </div>
         <div className='col-md-4' onClick={() => this.handleClick(this.state.images[14])}> 
           <div className='thumbnail'>
-            <img src={this.state.images[14]} alt="" className="img-responsive" style={{width: '40%'}}></img>
+            <img src={this.state.images[14]} alt="" className="img-responsive"></img>
           </div>
         </div>
       </div>
